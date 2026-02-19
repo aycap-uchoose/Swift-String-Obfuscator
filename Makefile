@@ -1,11 +1,11 @@
-INSTALL_PATH = /usr/local/bin/uc-string-obfuscator
+INSTALL_PATH = /usr/local/bin/uc-obfuscator
 
 build:
 	swift package update
 	swift build -c release
 
 install: build
-	sudo cp -f .build/release/uc-string-obfuscator $(INSTALL_PATH)
+	sudo cp -f .build/release/uc-obfuscator $(INSTALL_PATH)
 
 clean:
 	rm -rf .build

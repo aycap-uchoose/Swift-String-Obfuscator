@@ -11,7 +11,7 @@ import SwiftStringObfuscatorCore
 
 struct ObfuscateCommand: ParsableCommand {
     static let configuration = CommandConfiguration(
-        commandName: "obfuscate",
+        commandName: "string-obfuscate",
         abstract: "Scan a directory and obfuscate all .swift files in place."
     )
 

@@ -5,7 +5,7 @@ import SwiftParser
 
 struct DetectCommand: ParsableCommand {
     static let configuration = CommandConfiguration(
-        commandName: "detect",
+        commandName: "string-detect",
         abstract: "Detect string literals and add //:obfuscate comments before them."
     )
     

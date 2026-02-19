@@ -7,7 +7,7 @@ let package = Package(
         .macOS(.v10_15),
     ],
     products: [
-        .executable(name: "uc-string-obfuscator", targets: ["uc_string_obfuscator"]),
+        .executable(name: "uc-obfuscator", targets: ["uc_obfuscator"]),
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-syntax", from: "508.0.0"),
@@ -15,7 +15,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "uc_string_obfuscator",
+            name: "uc_obfuscator",
             dependencies: [
                 "SwiftStringObfuscatorCore",
                 .product(name: "ArgumentParser", package: "swift-argument-parser"),

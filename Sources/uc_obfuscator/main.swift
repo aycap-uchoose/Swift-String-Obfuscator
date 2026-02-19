@@ -9,11 +9,12 @@ import ArgumentParser
 
 struct UCStringObfuscatorCLI: ParsableCommand {
     static let configuration = CommandConfiguration(
-        commandName: "uc-string-obfuscator",
+        commandName: "uc-obfuscator",
         abstract: "A Swift command-line tool to convert string api-keys to byte arrays.",
         subcommands: [
             ObfuscateCommand.self,
-            DetectCommand.self
+            DetectCommand.self,
+            DetectIfDefsCommand.self
         ],
         defaultSubcommand: ObfuscateCommand.self // (optional)
     )
