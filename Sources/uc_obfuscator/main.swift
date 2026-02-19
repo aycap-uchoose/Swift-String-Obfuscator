@@ -15,7 +15,7 @@ struct UCStringObfuscatorCLI: ParsableCommand {
             ObfuscateCommand.self,
             DetectCommand.self,
             DetectIfDefsCommand.self,
-            CommentSampleAppCommand.self,
+            DeleteSampleAppCommand.self,
             DeleteTestsBodyCommand.self
         ],
         defaultSubcommand: ObfuscateCommand.self // (optional)
