@@ -5,7 +5,7 @@ build:
 	swift build -c release
 
 install: build
-	cp -f .build/release/uc-obfuscator $(INSTALL_PATH)
+	sudo cp -f .build/release/uc-obfuscator $(INSTALL_PATH)
 
 clean:
 	rm -rf .build
